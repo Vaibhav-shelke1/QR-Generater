@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code</title>
-    <link rel="stylesheet" href="styles2.css"> <!-- Link your CSS file -->
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <div class="container">
         <h1>QR Code</h1>
         <div class="qr-code">
-            <img src="/qr_image1.png" alt="QR Code">
+            <img src="qr_image1.png" alt="QR Code" id="qrImage">
+            <div class="button-container">
+                <button id="downloadButton">Download</button>
+            </div>
         </div>
     </div>
+    <script>
+    document.getElementById('downloadButton').addEventListener('click', function() {
+        const link = document.createElement('a');
+        link.href = document.getElementById('qrImage').src;
+        link.download = 'qr_code.png';
+        link.click();
+    });
+    </script>
 </body>
 </html>
