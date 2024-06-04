@@ -49,7 +49,7 @@ input[type="text"] {
 }
 
 button {
-    background-color: #2980b9; /* Blue button */
+    background-color: #52a2d7; /* Blue button */
     color: white;
     padding: 10px 20px;
     border: none;
@@ -59,7 +59,7 @@ button {
 }
 
 button:hover {
-    background-color: #1c6693; /* Darker blue on hover */
+    background-color: #0a0e10; /* Darker blue on hover */
 }
 
 /* Media Queries for Mobile Responsiveness */
