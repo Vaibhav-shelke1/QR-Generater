@@ -21,6 +21,11 @@ function getUrl(req, res, next) {
     const url = req.body["url"];
     var qr_svg = qr.image(url);
     qr_svg.pipe(fs.createWriteStream(__dirname + '/public/qr_image1.png'));
+    
+    fs.appendFile(__dirname + '/public/message.txt', url + '\n', (err) => {
+      if (err) throw err;
+      console.log('The URL has been saved!');
+    });
     next();
   } catch (err) {
     next(err);
