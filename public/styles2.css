@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; /* Dark blue-grey background */
+    color: #ecf0f1; /* Light grey text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height viewport */
+    flex-direction: column; /* Align items vertically */
+}
+
+h1 {
+    color: #ecf0f1; /* Light grey for good contrast */
+    text-align: center;
+    margin-bottom: 20px; /* Add some space between the heading and the QR code */
+}
+
+.container {
+    text-align: center; /* Center the content within the container */
+}
+
+.qr-code {
+    background: #34495e; /* Darker blue-grey background for the QR code container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Darker shadow */
+    display: inline-block; /* Ensure the container fits the content */
+}
+
+.qr-code img {
+    max-width: 100%;
+    height: auto; /* Ensure the image is responsive */
+}
